@@ -1,0 +1,26 @@
+
+plugins {
+	id 'java-library'
+}
+
+project.version = '4.7.11-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api',    version: '5.+'
+	testRuntimeOnly    group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.+'
+}
+
+
+jar {
+	manifest {
+		from("src/main/resources/META-INF/MANIFEST.MF")
+		attributes(
+			"Implementation-Title": project.name,
+			"Implementation-Version": archiveVersion)
+	}
+}

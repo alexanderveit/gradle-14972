@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Specification-Title: gradle-14972
+Specification-Version: 1.0
+
