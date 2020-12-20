@@ -21,6 +21,6 @@ jar {
 		from("src/main/resources/META-INF/MANIFEST.MF")
 		attributes(
 			"Implementation-Title": project.name,
-			"Implementation-Version": archiveVersion)
+			"Implementation-Version": version)
 	}
 }
